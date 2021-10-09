@@ -1,0 +1,19 @@
+.calcBtn {
+  position: relative;
+  border: 2px solid black;
+  color: black;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 1.2vw;
+  background-color: white;
+  margin: 10px;
+}
+
+.calcBtn:hover {
+  background-color: grey;
+  color: white;
+}
+.calcBtn:active {
+  background-color: black;
+  color: white;
+}

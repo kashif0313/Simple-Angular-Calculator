@@ -1,0 +1,21 @@
+<h3>Simple Calculator</h3>
+<div class="calculatorContainer">    
+    <app-output [dataSend]="tempValue"></app-output><div class="operatorDiv">{{operatorValue}}</div>
+<div class="operators">
+<app-button btnValue="0" (click)="parentFunction('0')"></app-button>
+<app-button btnValue="1" (click)="parentFunction('1')"></app-button>
+<app-button btnValue="2" (click)="parentFunction('2')"></app-button>
+<app-button btnValue="3" (click)="parentFunction('3')"></app-button>
+<app-button btnValue="AC" (click)="clearInput()"></app-button>  
+<app-button btnValue="4" (click)="parentFunction('4')"></app-button>
+<app-button btnValue="5" (click)="parentFunction('5')"></app-button>
+<app-button btnValue="6" (click)="parentFunction('6')"></app-button>
+<app-button btnValue="7" (click)="parentFunction('7')"></app-button><br>
+<app-button btnValue="8" (click)="parentFunction('8')"></app-button>
+<app-button btnValue="9" (click)="parentFunction('9')"></app-button>
+<app-button btnValue="+" (click)="operatorFunction('+')"></app-button>
+<app-button btnValue="-" (click)="operatorFunction('-')"></app-button><br>
+<app-button btnValue="*" (click)="operatorFunction('*')"></app-button>
+<app-button btnValue="/" (click)="operatorFunction('/')"></app-button>
+<app-button btnValue="=" (click)="resultFunction()"></app-button>
+</div>
